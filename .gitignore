@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+logs/
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+#some local files
+*/.idea/
+.idea/

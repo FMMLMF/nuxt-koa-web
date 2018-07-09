@@ -1,0 +1,50 @@
+{
+  "name": "vue-server-render",
+  "version": "1.1.0",
+  "description": "Vue & Koa",
+  "author": "Eric",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "aes-js": "^3.1.1",
+    "axios": "^0.18.0",
+    "cross-env": "^5.0.1",
+    "element-ui": "^2.3.6",
+    "ip": "^1.1.5",
+    "jquery": "3.2.1",
+    "js-base64": "^2.4.3",
+    "jsonwebtoken": "^8.2.1",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-log4": "^2.3.0",
+    "koa-router": "^7.4.0",
+    "koa-socket-2": "^1.0.17",
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0",
+    "nuxt": "latest",
+    "source-map-support": "^0.4.15",
+    "vue-socket.io": "^2.1.1-b"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-component": "^1.1.0",
+    "backpack-core": "^0.3.0",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "nodemon": "^1.11.0",
+    "scmp": "^2.0.0",
+    "vue-easytable": "^1.7.0"
+  }
+}

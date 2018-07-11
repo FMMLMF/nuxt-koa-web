@@ -72,6 +72,13 @@
         this.currentRoute = routeName
         this.$router.push({name: routeName})
       }
+    },
+    watch: {
+      $route(curVal, oldVal) {
+        if (curVal !== oldVal) {
+          this.isSelect = curVal.name
+        }
+      }
     }
   }
 </script>

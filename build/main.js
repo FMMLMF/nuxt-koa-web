@@ -116,8 +116,8 @@ router.use(__WEBPACK_IMPORTED_MODULE_2__account_test__["a" /* default */].routes
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
 
 
 var _this = this;
@@ -176,9 +176,9 @@ module.exports = function (options) {
   var logger = log4js.getLogger('cheese');
 
   return function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
       var start, responseTime;
-      return __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+      return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
@@ -326,8 +326,8 @@ module.exports = require("nuxt");
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa_router__);
 
@@ -346,8 +346,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 var router = __WEBPACK_IMPORTED_MODULE_1_koa_router___default()();
 
 router.post('/api/login', function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
-    return __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+    return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -398,8 +398,8 @@ router.post('/api/login', function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa_router__);
 
@@ -414,8 +414,8 @@ var IO = __webpack_require__(2);
 var io = new IO();
 
 router.post('/api/scoket', function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
-    return __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+    return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -490,8 +490,8 @@ module.exports = require("webpack");
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(9);
@@ -502,11 +502,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 
 var start = function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
     var _this = this;
 
     var app, host, port, config, nuxt, builder;
-    return __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+    return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
@@ -554,8 +554,8 @@ var start = function () {
             app.use(__WEBPACK_IMPORTED_MODULE_4__api__["a" /* default */].routes(), __WEBPACK_IMPORTED_MODULE_4__api__["a" /* default */].allowedMethods());
 
             app.use(function () {
-              var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
-                return __WEBPACK_IMPORTED_MODULE_0_C_Users_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+              var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+                return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
                   while (1) {
                     switch (_context.prev = _context.next) {
                       case 0:

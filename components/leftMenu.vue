@@ -75,7 +75,7 @@
     },
     watch: {
       $route(curVal, oldVal) {
-        if (curVal !== oldVal) {
+        if (curVal !== oldVal && this.isSelect !== curVal.name) {
           this.isSelect = curVal.name
         }
       }

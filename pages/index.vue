@@ -22,20 +22,20 @@
     components: {
       webHttp, axios
     },
-    mounted() {
-      webHttp({
-        url: '/api/login',
-        data: {
-          name: 'test'
-        },
-        callback: (response) => {
-          console.log(response)
-        }
-      })
-    },
     methods: {
       login() {
-        this.$router.push({name: 'normalCompany'})
+        webHttp({
+          url: '/api/login',
+          data: {
+            name: 'test'
+          },
+          callback: (response) => {
+            if (response.success) {
+              localStorage.setItem('userToken', response.data)
+              this.$router.push({name: 'normalCompany'})
+            }
+          }
+        })
       }
     }
   }

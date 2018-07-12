@@ -65,14 +65,14 @@ module.exports =
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 16);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(14);
+module.exports = __webpack_require__(19);
 
 
 /***/ },
@@ -85,33 +85,47 @@ module.exports = require("koa-router");
 /* 2 */
 /***/ function(module, exports) {
 
-module.exports = require("koa-socket-2");
+module.exports = require("fs");
 
 /***/ },
 /* 3 */
+/***/ function(module, exports) {
+
+module.exports = require("jsonwebtoken");
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+module.exports = require("path");
+
+/***/ },
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_koa_router__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_koa_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_koa_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__account_login__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__account_test__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__account_login__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_normalCompany__ = __webpack_require__(14);
 
 
 // account api
 
+
+// list
 
 
 var router = __WEBPACK_IMPORTED_MODULE_0_koa_router___default()();
 
 // account routes
 router.use(__WEBPACK_IMPORTED_MODULE_1__account_login__["a" /* default */].routes(), __WEBPACK_IMPORTED_MODULE_1__account_login__["a" /* default */].allowedMethods());
-router.use(__WEBPACK_IMPORTED_MODULE_2__account_test__["a" /* default */].routes(), __WEBPACK_IMPORTED_MODULE_2__account_test__["a" /* default */].allowedMethods());
+router.use(__WEBPACK_IMPORTED_MODULE_2__list_normalCompany__["a" /* default */].routes(), __WEBPACK_IMPORTED_MODULE_2__list_normalCompany__["a" /* default */].allowedMethods());
 
 /* harmony default export */ exports["a"] = router;
 
 /***/ },
-/* 4 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -124,8 +138,8 @@ var _this = this;
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-var log4js = __webpack_require__(13);
-var access = __webpack_require__(12);
+var log4js = __webpack_require__(18);
+var access = __webpack_require__(15);
 var methods = ['trace', 'debug', 'info', 'warn', 'error', 'fatal', 'mark'];
 
 var baseInfo = {
@@ -227,10 +241,10 @@ module.exports = function (options) {
 };
 
 /***/ },
-/* 5 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-var webpack = __webpack_require__(15);
+var webpack = __webpack_require__(20);
 module.exports = {
   /*
   ** Headers of the page
@@ -298,38 +312,48 @@ module.exports = {
 };
 
 /***/ },
-/* 6 */
+/* 8 */
 /***/ function(module, exports) {
 
 module.exports = require("ip");
 
 /***/ },
-/* 7 */
+/* 9 */
 /***/ function(module, exports) {
 
 module.exports = require("koa");
 
 /***/ },
-/* 8 */
+/* 10 */
 /***/ function(module, exports) {
 
 module.exports = require("koa-bodyparser");
 
 /***/ },
-/* 9 */
+/* 11 */
+/***/ function(module, exports) {
+
+module.exports = require("koa-socket-2");
+
+/***/ },
+/* 12 */
 /***/ function(module, exports) {
 
 module.exports = require("nuxt");
 
 /***/ },
-/* 10 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa_router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_js_base64__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_js_base64___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_js_base64__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jsonwebtoken__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jsonwebtoken___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jsonwebtoken__);
 
 
 var _this = this;
@@ -337,26 +361,40 @@ var _this = this;
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 
-// import { Base64 } from 'js-base64'
-// import jwt from 'jsonwebtoken'
-// const fs = require('fs')
-// const path = require('path')
-// const verify = require('../../middleware/auth/index')
+
+
+var fs = __webpack_require__(2);
+var path = __webpack_require__(4);
 
 var router = __WEBPACK_IMPORTED_MODULE_1_koa_router___default()();
 
 router.post('/api/login', function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+    var header, payload, secretKey, encodedString, signature;
     return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
+            header = {
+              'alg': 'HS256',
+              'typ': 'JWT'
+            };
+            payload = {
+              'ticket': '12345'
+            };
+            secretKey = fs.readFileSync(path.join(__dirname, '../../config/secret.pem'));
+            encodedString = __WEBPACK_IMPORTED_MODULE_2_js_base64__["Base64"].encode(JSON.stringify(header)) + '.' + __WEBPACK_IMPORTED_MODULE_2_js_base64__["Base64"].encode(JSON.stringify(payload));
+            signature = __WEBPACK_IMPORTED_MODULE_3_jsonwebtoken___default.a.sign({
+              exp: Math.floor(Date.now() / 1000) + 15 * 60, // expires 15 minutes
+              data: encodedString
+            }, secretKey);
+
             ctx.body = {
               success: true,
-              data: 'test'
+              data: signature
             };
 
-          case 1:
+          case 6:
           case 'end':
             return _context.stop();
         }
@@ -369,32 +407,11 @@ router.post('/api/login', function () {
   };
 }());
 
-// router.post('/api/login', verify, async (ctx, next) => {
-//   const header = {
-//     'alg': 'HS256',
-//     'typ': 'JWT'
-//   }
-//   const payload = {
-//     'ticket': '12345'
-//   }
-//   const secretKey = fs.readFileSync(path.join(__dirname, '../../config/secret.pem'))
-//   const encodedString = Base64.encode(JSON.stringify(header)) + '.' + Base64.encode(JSON.stringify(payload))
-//   const signature = jwt.sign(encodedString, secretKey)
-//   jwt.verify(signature, secretKey, (err, decoded) => {
-//     if (!err) {
-//       console.log(decoded)
-//     }
-//   })
-//   ctx.body = {
-//     success: true,
-//     data: 'test'
-//   }
-// })
-
 /* harmony default export */ exports["a"] = router;
+/* WEBPACK VAR INJECTION */}.call(exports, "api\\account"))
 
 /***/ },
-/* 11 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -409,24 +426,67 @@ var _this = this;
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 
-var router = __WEBPACK_IMPORTED_MODULE_1_koa_router___default()();
-var IO = __webpack_require__(2);
-var io = new IO();
+var verify = __webpack_require__(16);
 
-router.post('/api/scoket', function () {
+var router = __WEBPACK_IMPORTED_MODULE_1_koa_router___default()();
+
+router.post('/api/normalCompany/list', verify, function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
     return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            // io.on( 'info', async (ctx, data) => {
-            //   ctx.socket.emit('response', {
-            //     message: 'response message'
-            //   })
-            // })
             ctx.body = {
               success: true,
-              data: 'test'
+              data: [{
+                planId: '1111111',
+                repaymentCorpus: '88888888',
+                repaymentMonth: '99999999',
+                state: '还款中',
+                loanPeriods: '12',
+                startTime: '2018-04-25',
+                endTime: '2018-04-26'
+              }, {
+                planId: '222222222',
+                repaymentCorpus: '88888888',
+                repaymentMonth: '99999999',
+                state: '还款完成',
+                loanPeriods: '6',
+                startTime: '2018-04-26',
+                endTime: '2018-04-27'
+              }, {
+                planId: '33333333',
+                repaymentCorpus: '88888888',
+                repaymentMonth: '99999999',
+                state: '',
+                loanPeriods: '12',
+                startTime: '2018-04-27',
+                endTime: '2018-04-28'
+              }, {
+                planId: '444444444',
+                repaymentCorpus: '88888888',
+                repaymentMonth: '99999999',
+                state: '还款完成',
+                loanPeriods: '18',
+                startTime: '2018-04-28',
+                endTime: '2018-04-29'
+              }, {
+                planId: '5555555555',
+                repaymentCorpus: '88888888',
+                repaymentMonth: '99999999',
+                state: '',
+                loanPeriods: '18',
+                startTime: '2018-04-29',
+                endTime: '2018-04-30'
+              }, {
+                planId: '666666666',
+                repaymentCorpus: '88888888',
+                repaymentMonth: '99999999',
+                state: '还款完成',
+                loanPeriods: '12',
+                startTime: '2018-04-30',
+                endTime: '2018-05-01'
+              }]
             };
 
           case 1:
@@ -445,7 +505,7 @@ router.post('/api/scoket', function () {
 /* harmony default export */ exports["a"] = router;
 
 /***/ },
-/* 12 */
+/* 15 */
 /***/ function(module, exports) {
 
 module.exports = function (ctx, message, commonInfo) {
@@ -467,38 +527,108 @@ module.exports = function (ctx, message, commonInfo) {
 };
 
 /***/ },
-/* 13 */
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(__dirname) {Object.defineProperty(exports, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jsonwebtoken__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jsonwebtoken___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jsonwebtoken__);
+
+
+var _this = this;
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+
+var fs = __webpack_require__(2);
+var path = __webpack_require__(4);
+
+module.exports = function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+    var auth, token, secret, payload;
+    return __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            auth = ctx.get('Authorization');
+            token = auth.split(' ')[1];
+            secret = fs.readFileSync(path.join(__dirname, '../../config/secret.pem'));
+            _context.prev = 3;
+
+            // 解码取出之前存在payload的user_id 和 name
+            payload = __WEBPACK_IMPORTED_MODULE_1_jsonwebtoken___default.a.verify(token, secret);
+
+            ctx.user_id = payload.id;
+            ctx.name = payload.name;
+            _context.next = 9;
+            return next();
+
+          case 9:
+            _context.next = 14;
+            break;
+
+          case 11:
+            _context.prev = 11;
+            _context.t0 = _context['catch'](3);
+
+            ctx.throw(401, _context.t0);
+
+          case 14:
+          case 'end':
+            return _context.stop();
+        }
+      }
+    }, _callee, _this, [[3, 11]]);
+  }));
+
+  return function (_x, _x2) {
+    return _ref.apply(this, arguments);
+  };
+}();
+/* WEBPACK VAR INJECTION */}.call(exports, "middleware\\auth"))
+
+/***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+module.exports = require("js-base64");
+
+/***/ },
+/* 18 */
 /***/ function(module, exports) {
 
 module.exports = require("koa-log4");
 
 /***/ },
-/* 14 */
+/* 19 */
 /***/ function(module, exports) {
 
 module.exports = require("regenerator-runtime");
 
 /***/ },
-/* 15 */
+/* 20 */
 /***/ function(module, exports) {
 
 module.exports = require("webpack");
 
 /***/ },
-/* 16 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_C_Users_git_nuxt_koa_web_node_modules_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_nuxt__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_koa_bodyparser__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_koa_bodyparser__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_koa_bodyparser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_koa_bodyparser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__api__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__api__ = __webpack_require__(5);
 
 
 var start = function () {
@@ -516,7 +646,7 @@ var start = function () {
 
             // Import and Set Nuxt.js options
 
-            config = __webpack_require__(5);
+            config = __webpack_require__(7);
 
             config.dev = !(app.env === 'production');
 
@@ -609,10 +739,10 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 // log middleware
-var miLog = __webpack_require__(4);
-var ip = __webpack_require__(6);
+var miLog = __webpack_require__(6);
+var ip = __webpack_require__(8);
 // socket
-var IO = __webpack_require__(2);
+var IO = __webpack_require__(11);
 var io = new IO();
 
 

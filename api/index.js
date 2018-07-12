@@ -2,12 +2,14 @@ import Router from 'koa-router'
 
 // account api
 import login from './account/login'
-import test from './account/test'
+
+// list
+import normalCompanyList from './list/normalCompany'
 
 const router = Router()
 
 // account routes
 router.use(login.routes(), login.allowedMethods())
-router.use(test.routes(), test.allowedMethods())
+router.use(normalCompanyList.routes(), normalCompanyList.allowedMethods())
 
 export default router

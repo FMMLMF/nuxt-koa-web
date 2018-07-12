@@ -9,6 +9,7 @@ service.interceptors.request.use(config => {
   const token = localStorage.getItem('userToken')
   if (token) {
     config.headers.common['Authorization'] = 'Bearer ' + token
+    // config.headers.common['Authorization'] = token
   }
   return config
 }, error => {

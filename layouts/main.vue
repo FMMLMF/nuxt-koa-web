@@ -23,10 +23,6 @@
   import LeftMenu from '../components/leftMenu.vue'
   import TopMenu from '../components/TopMenu.vue'
   export default {
-    // mounted() {
-    //   // console.log(this.$route.name)
-    //   this.selectMenu = this.$route.name
-    // },
     components: {
       axios, Crumbs, LeftMenu, TopMenu
     },

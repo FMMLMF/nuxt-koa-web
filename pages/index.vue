@@ -26,9 +26,6 @@
       login() {
         webHttp({
           url: '/api/login',
-          data: {
-            name: 'test'
-          },
           callback: (response) => {
             if (response.success) {
               localStorage.setItem('userToken', response.data)

@@ -1,7 +1,7 @@
 {
-  "name": "vue-server-render",
+  "name": "nuxt-koa-web",
   "version": "1.1.0",
-  "description": "Vue & Koa",
+  "description": "Nuxt & Koa",
   "author": "Eric",
   "private": true,
   "scripts": {
